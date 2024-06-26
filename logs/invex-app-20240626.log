@@ -1,0 +1,4 @@
+2024-06-26 15:09:56.073 [main] INFO  com.invex.backend.InvexTestBackEndApplication - Starting InvexTestBackEndApplication using Java 17.0.9 with PID 22080 (D:\Documentos\Documentos\Repository\invex_test\target\classes started by gerifaltus in D:\Documentos\Documentos\Repository\invex_test)
+2024-06-26 15:09:56.079 [main] DEBUG com.invex.backend.InvexTestBackEndApplication - Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-06-26 15:09:56.081 [main] INFO  com.invex.backend.InvexTestBackEndApplication - The following 1 profile is active: "dev"
+2024-06-26 15:10:02.884 [main] INFO  com.invex.backend.InvexTestBackEndApplication - Started InvexTestBackEndApplication in 7.304 seconds (process running for 8.839)
