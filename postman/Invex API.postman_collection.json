@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "f720258e-c88e-454e-bcfd-faf9b2c81195",
+		"name": "Invex API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16974003"
+	},
+	"item": [
+		{
+			"name": "getAllEmployees",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "header-test",
+						"value": "value-test",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveEmployee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"firstName\": \"ricardo2\",\r\n        \"secondName\": \"\",\r\n        \"lastName\": \"corazón\",\r\n        \"mothersLastName\": \"de leon\",\r\n        \"age\": 21,\r\n        \"gender\": {\"code\":\"M\"},\r\n        \"birthdate\": \"2022-05-11\",\r\n        \"position\": {\"code\":\"P001\"},\r\n        \"active\":true\r\n    },\r\n    {\r\n        \"firstName\": \"leonardo2\",\r\n        \"secondName\": \"\",\r\n        \"lastName\": \"corazón\",\r\n        \"mothersLastName\": \"de dragón\",\r\n        \"age\": 22,\r\n        \"gender\": {\"code\":\"M\"},\r\n        \"birthdate\": \"2021-04-11\",\r\n        \"position\": {\"code\":\"P002\"},\r\n        \"active\":true\r\n    },\r\n    {\r\n        \"firstName\": \"chaplin2\",\r\n        \"secondName\": \"\",\r\n        \"lastName\": \"mekensy\",\r\n        \"mothersLastName\": \"segundo\",\r\n        \"age\": 23,\r\n        \"gender\": {\"code\":\"F\"},\r\n        \"birthdate\": \"2020-02-11\",\r\n        \"position\": {\"code\":\"P003\"},\r\n        \"active\":true\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateEmployee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"firstName\": \"ricardo update\",\r\n        \"secondName\": \"\",\r\n        \"lastName\": \"corazón\",\r\n        \"mothersLastName\": \"de leon\",\r\n        \"age\": 22,\r\n        \"gender\": {\"code\":\"M\"},\r\n        \"birthdate\": \"2022-05-11\",\r\n        \"position\": {\"code\":\"P001\"},\r\n        \"active\":true\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/employees/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteEmployee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/employees/100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						"100"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
